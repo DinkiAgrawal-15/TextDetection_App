@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:id="@+id/image_view"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_view"
+        android:text=""
+        android:textSize="26dp"
+        android:maxLines="6"
+        android:layout_margin="10dp"
+        android:id="@+id/text_display"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/capture_image_btn"
+        android:textAllCaps="false"
+        android:background="@color/design_default_color_primary_dark"
+        android:layout_above="@+id/deduct_text__image_btn"
+        android:textSize="17dp"
+        android:layout_marginBottom="10dp"
+        android:text="capture Image"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deduct_text__image_btn"
+        android:layout_alignParentBottom="true"
+        android:textSize="17dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/cardview_light_background"
+        android:textAllCaps="false"
+        android:text="Detect text"/>
+
+</RelativeLayout>
